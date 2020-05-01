@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD080C4C2334F99F00560548 /* BLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD080C4B2334F99F00560548 /* BLExtension.swift */; };
+		DD243C77233DFC360075114B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD080C472334F16200560548 /* CoreBluetooth.framework */; };
+		DD243C7A233DFC820075114B /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD243C74233DFBD70075114B /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD243C7B233DFDE00075114B /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD243C74233DFBD70075114B /* Starscream.framework */; };
+		DD375F64239E8DB100A4A96D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD375F63239E8DB100A4A96D /* icon.png */; };
+		DD59985D233A0D2A000D1515 /* WSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59985C233A0D2A000D1515 /* WSExtension.swift */; };
+		DD7D4F272333630500F80713 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F202333630400F80713 /* DLRadioButton.m */; };
+		DD7D4F3023337A9400F80713 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2923337A9200F80713 /* Result.swift */; };
+		DD7D4F3123337A9400F80713 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2B23337A9300F80713 /* yudpsocket.c */; };
+		DD7D4F3223337A9400F80713 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2C23337A9300F80713 /* ytcpsocket.c */; };
+		DD7D4F3323337A9400F80713 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2D23337A9300F80713 /* UDPClient.swift */; };
+		DD7D4F3423337A9400F80713 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2E23337A9300F80713 /* TCPClient.swift */; };
+		DD7D4F3523337A9400F80713 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7D4F2F23337A9300F80713 /* Socket.swift */; };
+		DD888C17232FC5AB00B26E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD888C16232FC5AB00B26E01 /* AppDelegate.swift */; };
+		DD888C19232FC5AB00B26E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD888C18232FC5AB00B26E01 /* ViewController.swift */; };
+		DD888C1C232FC5AB00B26E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD888C1A232FC5AB00B26E01 /* Main.storyboard */; };
+		DD888C21232FC5AC00B26E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD888C1F232FC5AC00B26E01 /* LaunchScreen.storyboard */; };
+		DDCF23AE233251BE0013718B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCF23AD233251BE0013718B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD5998582339FFEC000D1515 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD243C7A233DFC820075114B /* Starscream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DD080C472334F16200560548 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DD080C4B2334F99F00560548 /* BLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLExtension.swift; sourceTree = "<group>"; };
+		DD093EAE233CEB7C00406360 /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon.png"; path = "res/app-icon.png"; sourceTree = "<group>"; };
+		DD243C74233DFBD70075114B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = uFROnlineFinder/frameworks/Starscream.framework; sourceTree = "<group>"; };
+		DD375F63239E8DB100A4A96D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = uFROnlineFinder/res/icon.png; sourceTree = "<group>"; };
+		DD5998552339FF29000D1515 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = uFROnlineFinder/frameworks/Starscream.framework; sourceTree = "<group>"; };
+		DD59985C233A0D2A000D1515 /* WSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WSExtension.swift; path = src/WSExtension.swift; sourceTree = "<group>"; };
+		DD7D4F202333630400F80713 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = src/DLRadioButton.m; sourceTree = "<group>"; };
+		DD7D4F252333630500F80713 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = src/DLRadioButton.h; sourceTree = "<group>"; };
+		DD7D4F2923337A9200F80713 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = src/Result.swift; sourceTree = "<group>"; };
+		DD7D4F2A23337A9300F80713 /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftSocket.h; path = src/SwiftSocket.h; sourceTree = "<group>"; };
+		DD7D4F2B23337A9300F80713 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = src/yudpsocket.c; sourceTree = "<group>"; };
+		DD7D4F2C23337A9300F80713 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = src/ytcpsocket.c; sourceTree = "<group>"; };
+		DD7D4F2D23337A9300F80713 /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = src/UDPClient.swift; sourceTree = "<group>"; };
+		DD7D4F2E23337A9300F80713 /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = src/TCPClient.swift; sourceTree = "<group>"; };
+		DD7D4F2F23337A9300F80713 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = src/Socket.swift; sourceTree = "<group>"; };
+		DD888C13232FC5AB00B26E01 /* WiFi NFC Reader - μFR Online Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiFi NFC Reader - μFR Online Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD888C16232FC5AB00B26E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD888C18232FC5AB00B26E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD888C1B232FC5AB00B26E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD888C20232FC5AC00B26E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD888C22232FC5AC00B26E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD888C44232FCB3B00B26E01 /* uFROnlineFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uFROnlineFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		DDCF23AD233251BE0013718B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD888C10232FC5AB00B26E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD243C7B233DFDE00075114B /* Starscream.framework in Frameworks */,
+				DD243C77233DFC360075114B /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD080C462334F16200560548 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5998552339FF29000D1515 /* Starscream.framework */,
+				DD080C472334F16200560548 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD888C0A232FC5AB00B26E01 = {
+			isa = PBXGroup;
+			children = (
+				DD375F63239E8DB100A4A96D /* icon.png */,
+				DD243C74233DFBD70075114B /* Starscream.framework */,
+				DD888C15232FC5AB00B26E01 /* uFROnlineFinder */,
+				DD888C14232FC5AB00B26E01 /* Products */,
+				DD080C462334F16200560548 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD888C14232FC5AB00B26E01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD888C13232FC5AB00B26E01 /* WiFi NFC Reader - μFR Online Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD888C15232FC5AB00B26E01 /* uFROnlineFinder */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D4F252333630500F80713 /* DLRadioButton.h */,
+				DD7D4F202333630400F80713 /* DLRadioButton.m */,
+				DD888C16232FC5AB00B26E01 /* AppDelegate.swift */,
+				DD888C18232FC5AB00B26E01 /* ViewController.swift */,
+				DD080C4B2334F99F00560548 /* BLExtension.swift */,
+				DD59985C233A0D2A000D1515 /* WSExtension.swift */,
+				DD7D4F2923337A9200F80713 /* Result.swift */,
+				DD7D4F2F23337A9300F80713 /* Socket.swift */,
+				DD7D4F2A23337A9300F80713 /* SwiftSocket.h */,
+				DD7D4F2E23337A9300F80713 /* TCPClient.swift */,
+				DD7D4F2D23337A9300F80713 /* UDPClient.swift */,
+				DD7D4F2C23337A9300F80713 /* ytcpsocket.c */,
+				DD7D4F2B23337A9300F80713 /* yudpsocket.c */,
+				DD888C1A232FC5AB00B26E01 /* Main.storyboard */,
+				DD093EAE233CEB7C00406360 /* app-icon.png */,
+				DDCF23AD233251BE0013718B /* Assets.xcassets */,
+				DD888C1F232FC5AC00B26E01 /* LaunchScreen.storyboard */,
+				DD888C22232FC5AC00B26E01 /* Info.plist */,
+				DD888C44232FCB3B00B26E01 /* uFROnlineFinder-Bridging-Header.h */,
+			);
+			path = uFROnlineFinder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD888C12232FC5AB00B26E01 /* uFROnlineFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD888C3B232FC5AC00B26E01 /* Build configuration list for PBXNativeTarget "uFROnlineFinder" */;
+			buildPhases = (
+				DD888C0F232FC5AB00B26E01 /* Sources */,
+				DD888C10232FC5AB00B26E01 /* Frameworks */,
+				DD888C11232FC5AB00B26E01 /* Resources */,
+				DD5998582339FFEC000D1515 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uFROnlineFinder;
+			productName = uFROnlineFinder;
+			productReference = DD888C13232FC5AB00B26E01 /* WiFi NFC Reader - μFR Online Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD888C0B232FC5AB00B26E01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Digital Logic";
+				TargetAttributes = {
+					DD888C12232FC5AB00B26E01 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = DD888C0E232FC5AB00B26E01 /* Build configuration list for PBXProject "uFROnlineFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD888C0A232FC5AB00B26E01;
+			productRefGroup = DD888C14232FC5AB00B26E01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD888C12232FC5AB00B26E01 /* uFROnlineFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD888C11232FC5AB00B26E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD375F64239E8DB100A4A96D /* icon.png in Resources */,
+				DD888C21232FC5AC00B26E01 /* LaunchScreen.storyboard in Resources */,
+				DDCF23AE233251BE0013718B /* Assets.xcassets in Resources */,
+				DD888C1C232FC5AB00B26E01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD888C0F232FC5AB00B26E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7D4F3023337A9400F80713 /* Result.swift in Sources */,
+				DD7D4F3423337A9400F80713 /* TCPClient.swift in Sources */,
+				DD888C19232FC5AB00B26E01 /* ViewController.swift in Sources */,
+				DD7D4F3223337A9400F80713 /* ytcpsocket.c in Sources */,
+				DD59985D233A0D2A000D1515 /* WSExtension.swift in Sources */,
+				DD7D4F272333630500F80713 /* DLRadioButton.m in Sources */,
+				DD7D4F3323337A9400F80713 /* UDPClient.swift in Sources */,
+				DD7D4F3523337A9400F80713 /* Socket.swift in Sources */,
+				DD888C17232FC5AB00B26E01 /* AppDelegate.swift in Sources */,
+				DD7D4F3123337A9400F80713 /* yudpsocket.c in Sources */,
+				DD080C4C2334F99F00560548 /* BLExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD888C1A232FC5AB00B26E01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD888C1B232FC5AB00B26E01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD888C1F232FC5AC00B26E01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD888C20232FC5AC00B26E01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD888C39232FC5AC00B26E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD888C3A232FC5AC00B26E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD888C3C232FC5AC00B26E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "uFROnlineFinder/WiFi NFC Reader - μFR Online Reader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = AV7K5892U7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/uFROnlineFinder/frameworks",
+				);
+				INFOPLIST_FILE = uFROnlineFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = DigitalLogicDOO.uFROnlineFinder;
+				PRODUCT_NAME = "WiFi NFC Reader - μFR Online Reader";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFROnlineFinder/uFROnlineFinder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s armv7";
+			};
+			name = Debug;
+		};
+		DD888C3D232FC5AC00B26E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "uFROnlineFinder/WiFi NFC Reader - μFR Online Reader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = AV7K5892U7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/uFROnlineFinder/frameworks",
+				);
+				INFOPLIST_FILE = uFROnlineFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = DigitalLogicDOO.uFROnlineFinder;
+				PRODUCT_NAME = "WiFi NFC Reader - μFR Online Reader";
+				SWIFT_OBJC_BRIDGING_HEADER = "uFROnlineFinder/uFROnlineFinder-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD888C0E232FC5AB00B26E01 /* Build configuration list for PBXProject "uFROnlineFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD888C39232FC5AC00B26E01 /* Debug */,
+				DD888C3A232FC5AC00B26E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD888C3B232FC5AC00B26E01 /* Build configuration list for PBXNativeTarget "uFROnlineFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD888C3C232FC5AC00B26E01 /* Debug */,
+				DD888C3D232FC5AC00B26E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD888C0B232FC5AB00B26E01 /* Project object */;
+}
